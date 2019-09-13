@@ -115,24 +115,41 @@ nav ul li a:hover::before {
 
 /* min-height and width are pretty much the building blocks of each section */
 
-/*#sectionZero,#sectionOne,#sectionTwo,#sectionThree,#sectionFour,#sectionFive,#sectionSix {
+/*#sectionZero,#sectionOne,#sectionThree,#sectionTwo,#sectionFour,#sectionFive,#sectionSix {
       min-height: 100vh;
       width: 100%;
 }*/
 
 /*WEBSITE BANNER - hero image */
+
+
 #sectionZero {
-      background: url(imgs/banner.jpg) no-repeat 50% 50%;
+      background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(imgs/banner2.jpg) center no-repeat;
       background-size: cover;
       min-height: 100vh;
        /* -60PX ensures the banner and nav are all the way at the top once the banner text is added */
        margin-top: -60px;
        /* -60PX bottom ensures theres no gap between the banner and sectionOne */
-       margin-bottom: -60px;
+       margin-bottom: -50px;
        /* navbar is approx 70px high so you're accounting for that */
+       animation: animate 16s ease-in-out infinite;
 }
 
-/* padding stuff in #bannerText will harm the nav, so do that under bannerText p */
+@keyframes animate{
+      0%, 100%{
+            background-image: url(imgs/banner5.jpg);
+      }
+      25%{
+            background-image: url(imgs/banner6.jpg);
+      }
+      50%{
+            background-image: url(imgs/banner3.jpg);
+      }
+      75%{
+            background-image: url(imgs/banner7.jpg);
+      }
+}
+
 #bannerText {
       text-align: center;
       color: white;
@@ -143,18 +160,22 @@ nav ul li a:hover::before {
 
 #bannerText p {
       padding-top: 400px;
-      letter-spacing: 3px;
       font-weight: 600;
+      font-family: monaco, Consolas, "Lucida Console", monospace; 
       font-size:60px;
       /*line-height: 80px; */
-      letter-spacing: 20px;  
+      letter-spacing: 15px;  
 }
+
+/* padding stuff in #bannerText will harm the nav, so do that under bannerText p */
+
+
 
 /* ABOUT SECTION */
 #sectionOne {
-      background-color: #101010;
+      background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9) ),url(imgs/about2.jpg) center no-repeat;
       background-size: cover;
-      margin-top: 0px;
+      margin-top: 50px;
       min-height: 100vh;
 }
 
@@ -176,7 +197,9 @@ nav ul li a:hover::before {
       font-size: 20px;
       line-height: 40px;
       padding-right: 25%;
-      padding-left: 25%;      
+      padding-left: 25%; 
+      font-weight: 500;  
+      margin-bottom: 0px;   
       
 }
 
@@ -199,7 +222,7 @@ nav ul li a:hover::before {
 .button:hover {
       box-shadow: inset 400px 0 0 0 #d20000;
 }    
-    
+
 .buttonContainer {
       width: 100%;
       margin: 20px auto 0 auto;
@@ -221,6 +244,7 @@ nav ul li a:hover::before {
 .buttonContainer3 {
       text-align: right;
       padding-right: 75px;
+      padding-bottom: 100px;
 }
 
 .button3 {
@@ -241,10 +265,11 @@ nav ul li a:hover::before {
 .button3:hover {
       box-shadow: inset 400px 0 0 0 #FFF;
       color: #d20000;
-}    
+}   
 
-/* WHAKAPAPA SECTION */
- #sectionTwo::selection{
+
+/* Past Event SECTION */
+#sectionTwo::selection{
       background: blue;
 }
 
@@ -358,7 +383,7 @@ nav ul li a:hover::before {
 /* EVENT 2018 */
 #sectionThree {
       margin-top: 0px;
-      background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0,1)), url(imgs/event2018.jpg) no-repeat 50% 50%;
+      background: linear-gradient(to bottom, black, rgba(71, 2, 2, 0.288), rgba(255, 0, 0, 0.37), rgba(71, 2, 2, 0.288), black) center no-repeat; 
       background-size: cover;      
       padding-bottom: 1px;
       min-height: 100vh;      
@@ -383,6 +408,7 @@ nav ul li a:hover::before {
       text-align: center;
       padding-top: 100px;
       letter-spacing: 3px;
+      margin-bottom: 0px;
 }
 
 
