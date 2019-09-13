@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.heading{
+    color: #d20000;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+
+.outer{
+    overflow: hidden;
+    text-align: center;
+    background: #101010;
+    padding: 40px;
+}
+
+.outer h1{
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #d20000;
+    font-size: 40px;
+}
+
+.outer h2{
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #d20000;
+    font-size: 30px;
+}
+
+
+
+#intro{
+    color:white; 
+    margin-top: 5px; 
+    font-size: 17px; 
+    line-height: 25px;
+    padding-left: 20px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.border{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: #d20000;
+    margin-bottom: 20px;
+
+}
+
+
+.team-member{
+    width: 260px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+.team-member img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+
+}
+
+#span{
+    position: relative;
+    opacity: 0;
+    transition: 0.9s opacity;
+}
+
+#span:before{
+    z-index: -1;
+}
+
+.team-member:hover > #span{
+    opacity: 1;
+}
+
+.team-member:hover > img{
+    filter: none;
+}
+
+.team-member h3{
+    margin: 0;
+    color: #d20000;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.team-member h4{
+    margin: 0;
+    color: #d20000;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.team-member p{
+    text-align: left;
+    font-size: 17px;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
